@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://fravart.ru/days/2026-07-12-pochemu-stareesh-scenario/">
+        <link rel="canonical" href="https://fravart.ru/days/2026-07-13-longcut-research/">
       
       
       
@@ -23,7 +23,7 @@
     
     
       
-        <title>Почему ты стареешь: сценарий + TTS - fravart.ru — Личный архив</title>
+        <title>LongCut: изучение инструмента + парсер спецификаций - fravart.ru — Личный архив</title>
       
     
     
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Почему ты стареешь: сценарий + TTS
+              LongCut: изучение инструмента + парсер спецификаций
             
           </span>
         </div>
@@ -694,10 +694,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#longcut" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LongCut
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Концепция
+        Школа Москва — парсер спецификаций
       
     </span>
   </a>
@@ -708,51 +719,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Структура сценария
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Технические детали
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#srt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Субтитры (SRT)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#n8n" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        n8n / Бухгалтер
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Что осталось
+        Решения / заметки
       
     </span>
   </a>
@@ -780,35 +747,28 @@
       
       
       
-        <span class="md-tag">tts</span>
+        <span class="md-tag">ai-tools</span>
       
     
       
       
       
       
-        <span class="md-tag">видео</span>
+        <span class="md-tag">longcut</span>
       
     
       
       
       
       
-        <span class="md-tag">научпоп</span>
+        <span class="md-tag">shkola-moskva</span>
       
     
       
       
       
       
-        <span class="md-tag">старение</span>
-      
-    
-      
-      
-      
-      
-        <span class="md-tag">сценарий</span>
+        <span class="md-tag">video-editing</span>
       
     
   </nav>
@@ -816,44 +776,25 @@
 
 
 <h1 id="_1">Что делали<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>Подготовили сценарий для видео «Почему ты стареешь» и сгенерировали TTS-озвучку.</p>
-<h2 id="_2">Концепция<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Научпоп о биологии старения. 7 сцен по 40-45 сек, целевая длительность ~5 мин.</p>
-<h2 id="_3">Структура сценария<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>HOOK</strong> (0:00–0:30) — провокация, «тебе 25 тысяч дней»</li>
-<li><strong>ЧТО ТАКОЕ СТАРЕНИЕ</strong> (0:30–1:30) — три процесса (ДНК, предел Хейфлика, митохондрии)</li>
-<li><strong>ПОЧЕМУ НЕ ОСТАНОВИТЬ</strong> (1:30–2:30) — миф о теломерах, срыв надежд</li>
-<li><strong>ПОЧЕМУ ОДНИ ЖИВУТ ДОЛЬШЕ</strong> (2:30–3:30) — крыса 3 года vs кит 200 лет</li>
-<li><strong>ЧТО МОЖНО СДЕЛАТЬ</strong> (3:30–4:30) — честно, без обещаний</li>
-<li><strong>ФИНАЛ</strong> (4:30–5:00) — философский итог</li>
-</ol>
-<h2 id="_4">Технические детали<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Изучили инструмент <a href="https://www.longcut.ai/">LongCut.ai</a> — AI-платформу для видеомонтажа и автоматизации. Параллельно продолжили доработку парсера спецификаций <code>.doc</code> → <code>.xlsx</code> для проекта «Школа Москва».</p>
+<h2 id="longcut">LongCut<a class="headerlink" href="#longcut" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Сценарий в <code>SCENARIO_AGING.md</code> на Drive</li>
-<li>TTS через MiniMax SergiusVoice01 (тот же голос что для Bio)</li>
-<li>Видео собрано раньше: <code>final_ru_subs_v3.mp4</code> (3:44) + <code>final_en_subs_v3.mp4</code></li>
+<li>LongCut поддерживает MiniMax M3, xAI Grok, Google Gemini как AI-провайдеров</li>
+<li>MiniMax M3 рекомендован как основной для LongCut</li>
+<li>Инструмент предназначен для AI-автоматизации видеопроизводства</li>
+<li>Потенциально полезен для пайплайна видеопродакшна</li>
 </ul>
-<h2 id="srt">Субтитры (SRT)<a class="headerlink" href="#srt" title="Permanent link">&para;</a></h2>
+<h2 id="_2">Школа Москва — парсер спецификаций<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Сгенерированы SRT-субтитры для RU и EN версий, синхронизированные с длительностью голоса</li>
-<li><strong>RU</strong>: 68 реплик, последняя <code>00:03:43.686</code> (голос 3:44.05, запас 0.36с)</li>
-<li><strong>EN</strong>: 68 реплик, последняя <code>00:03:20.056</code> (голос 3:20.49, запас 0.43с)</li>
-<li>Скрипт генерации: <code>/tmp/aging_work/make_subs.py</code></li>
-<li>Субтитры подогнаны под реальную длительность голоса (не длину текста)</li>
-<li>Минимальная длительность фразы: 1.0 сек (убрано ограничение 1.5 сек для коротких фраз)</li>
-<li>Hard-burn субтитров в видео через ffmpeg фильтр <code>subtitles</code></li>
+<li>Продолжена доработка <code>parse_to_xlsx.py</code> — парсера <code>.doc</code> → <code>.xlsx</code> для спецификаций ЭОМ</li>
+<li>Исправлены: дублирующийся <code>else</code> блок, обработка заголовков секций (<code>unit_idx == 0</code>)</li>
+<li>Проблема: блоки вида <code>3\\tЩО1.1\\t\\tDEKRAFT\\tшт.\\t1</code> создают фантомные строки (603 вместо ~250)</li>
+<li>Файлы спецификаций обрабатываются в <code>/tmp/shkola/</code></li>
 </ul>
-<h2 id="n8n">n8n / Бухгалтер<a class="headerlink" href="#n8n" title="Permanent link">&para;</a></h2>
+<h2 id="_3">Решения / заметки<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Бот <code>@fin_kosmos_bot</code> добавлен в группу, workflow в n8n обновлён (Anthropic → Gemini)</li>
-<li>Обнаружена проблема HTTP 403 «Provided secret is not valid» при публикации webhook</li>
-<li>Polling-процесс Telegram → n8n остановлен до решения проблемы с webhook</li>
-<li>Сессия завершена по требованию Сергея (агент начал зацикливаться)</li>
-</ul>
-<h2 id="_5">Что осталось<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Обложки RU + EN (сделали 13 июля)</li>
+<li>LongCut заслуживает дальнейшего изучения — может заменить часть ручного ffmpeg-пайплайна</li>
+<li>Парсер спецификаций требует доработки логики распознавания заголовков секций</li>
 </ul>
 
 

@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://fravart.ru/days/2026-07-12-pochemu-stareesh-scenario/">
+        <link rel="canonical" href="https://fravart.ru/days/2026-07-07-hermes-recovery/">
       
       
       
@@ -23,7 +23,7 @@
     
     
       
-        <title>Почему ты стареешь: сценарий + TTS - fravart.ru — Личный архив</title>
+        <title>Hermes: восстановление Telegram-бота и переключение моделей - fravart.ru — Личный архив</title>
       
     
     
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Почему ты стареешь: сценарий + TTS
+              Hermes: восстановление Telegram-бота и переключение моделей
             
           </span>
         </div>
@@ -697,21 +697,49 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Концепция
+        Результаты
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Результаты">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gemini-deepseek-v4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Переключение модели: Gemini → DeepSeek V4
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#telegram-" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Структура сценария
+        Восстановление Telegram-бота
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проверка серверных сервисов
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -719,40 +747,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Технические детали
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#srt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Субтитры (SRT)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#n8n" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        n8n / Бухгалтер
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Что осталось
+        Решения / заметки
       
     </span>
   </a>
@@ -780,35 +775,42 @@
       
       
       
-        <span class="md-tag">tts</span>
+        <span class="md-tag">deepseek</span>
       
     
       
       
       
       
-        <span class="md-tag">видео</span>
+        <span class="md-tag">gateway</span>
       
     
       
       
       
       
-        <span class="md-tag">научпоп</span>
+        <span class="md-tag">gemini</span>
       
     
       
       
       
       
-        <span class="md-tag">старение</span>
+        <span class="md-tag">hermes-config</span>
       
     
       
       
       
       
-        <span class="md-tag">сценарий</span>
+        <span class="md-tag">model-switch</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">telegram</span>
       
     
   </nav>
@@ -816,44 +818,34 @@
 
 
 <h1 id="_1">Что делали<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>Подготовили сценарий для видео «Почему ты стареешь» и сгенерировали TTS-озвучку.</p>
-<h2 id="_2">Концепция<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Научпоп о биологии старения. 7 сцен по 40-45 сек, целевая длительность ~5 мин.</p>
-<h2 id="_3">Структура сценария<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>HOOK</strong> (0:00–0:30) — провокация, «тебе 25 тысяч дней»</li>
-<li><strong>ЧТО ТАКОЕ СТАРЕНИЕ</strong> (0:30–1:30) — три процесса (ДНК, предел Хейфлика, митохондрии)</li>
-<li><strong>ПОЧЕМУ НЕ ОСТАНОВИТЬ</strong> (1:30–2:30) — миф о теломерах, срыв надежд</li>
-<li><strong>ПОЧЕМУ ОДНИ ЖИВУТ ДОЛЬШЕ</strong> (2:30–3:30) — крыса 3 года vs кит 200 лет</li>
-<li><strong>ЧТО МОЖНО СДЕЛАТЬ</strong> (3:30–4:30) — честно, без обещаний</li>
-<li><strong>ФИНАЛ</strong> (4:30–5:00) — философский итог</li>
-</ol>
-<h2 id="_4">Технические детали<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>День устранения проблем: Telegram-бот не отвечал, gateway был в нестабильном состоянии. Проведена полная диагностика и восстановление.</p>
+<h2 id="_2">Результаты<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="gemini-deepseek-v4">Переключение модели: Gemini → DeepSeek V4<a class="headerlink" href="#gemini-deepseek-v4" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Сценарий в <code>SCENARIO_AGING.md</code> на Drive</li>
-<li>TTS через MiniMax SergiusVoice01 (тот же голос что для Bio)</li>
-<li>Видео собрано раньше: <code>final_ru_subs_v3.mp4</code> (3:44) + <code>final_en_subs_v3.mp4</code></li>
+<li>Основная модель изменена с <code>gemini-3.5-flash</code> (Google) на <code>deepseek-v4-pro</code> (DeepSeek)</li>
+<li>Команда: <code>hermes config set model.default deepseek-v4-pro &amp;&amp; hermes config set model.provider deepseek</code></li>
+<li>Причина: Gemini 3.5 Flash медленный и "тупит", DeepSeek V4 Pro быстрее и мощнее</li>
 </ul>
-<h2 id="srt">Субтитры (SRT)<a class="headerlink" href="#srt" title="Permanent link">&para;</a></h2>
+<h3 id="telegram-">Восстановление Telegram-бота<a class="headerlink" href="#telegram-" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Сгенерированы SRT-субтитры для RU и EN версий, синхронизированные с длительностью голоса</li>
-<li><strong>RU</strong>: 68 реплик, последняя <code>00:03:43.686</code> (голос 3:44.05, запас 0.36с)</li>
-<li><strong>EN</strong>: 68 реплик, последняя <code>00:03:20.056</code> (голос 3:20.49, запас 0.43с)</li>
-<li>Скрипт генерации: <code>/tmp/aging_work/make_subs.py</code></li>
-<li>Субтитры подогнаны под реальную длительность голоса (не длину текста)</li>
-<li>Минимальная длительность фразы: 1.0 сек (убрано ограничение 1.5 сек для коротких фраз)</li>
-<li>Hard-burn субтитров в видео через ffmpeg фильтр <code>subtitles</code></li>
+<li>Диагностирована ошибка Telegram-бота: <code>Sorry, I encountered an unexpected error</code></li>
+<li>Проверены все gateway-процессы: main (PID 822037), engineer (PID 822057), accountant (PID 822055)</li>
+<li>Выполнен <code>hermes gateway restart</code> — все три профиля поднялись</li>
+<li>Kling MCP сервер в ошибке (401 Unauthorized) — не влияет на работу ботов</li>
 </ul>
-<h2 id="n8n">n8n / Бухгалтер<a class="headerlink" href="#n8n" title="Permanent link">&para;</a></h2>
+<h3 id="_3">Проверка серверных сервисов<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Бот <code>@fin_kosmos_bot</code> добавлен в группу, workflow в n8n обновлён (Anthropic → Gemini)</li>
-<li>Обнаружена проблема HTTP 403 «Provided secret is not valid» при публикации webhook</li>
-<li>Polling-процесс Telegram → n8n остановлен до решения проблемы с webhook</li>
-<li>Сессия завершена по требованию Сергея (агент начал зацикливаться)</li>
+<li>Диск: 54% использовано (17G свободно на 38G)</li>
+<li>Память: использовано 2.3G из 3.8G (нет swap)</li>
+<li>Все сторонние боты работают: claude-bot, max_admin_bot, max_vpn_bot, vpn_bot</li>
+<li>VPN-сервисы в норме</li>
 </ul>
-<h2 id="_5">Что осталось<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_4">Решения / заметки<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Обложки RU + EN (сделали 13 июля)</li>
+<li><strong>Gateway</strong>: три профиля (main, engineer, accountant) теперь стабильно работают через systemd</li>
+<li><strong>Модель</strong>: DeepSeek V4 Pro — основной, с fallback на DeepSeek Chat → MiMo → Gemini</li>
+<li><strong>Kling MCP</strong>: требует переавторизации, но не критичен — оставлен в parked-состоянии</li>
+<li><strong>SOUL.md</strong>: gateway-сессии не загружают skills автоматически, только SOUL.md</li>
 </ul>
 
 
