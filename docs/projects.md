@@ -12,7 +12,9 @@
 
 - [Bioelectricity / Levin](bioelectricity-levin.md) — научпоп по работам Michael Levin
 - [Почему ты стареешь](pochemu-ty-stareesh.md) — биология старения
+- [Видеопродакшн](videobooks.md) — пайплайн производства видео: Kling, MiniMax, ffmpeg, YouTube
 
 ## Инструменты
 
 - [Hermes — конфиг](hermes-config.md) — настройка AI-агента, модели, провайдеры
+- [LongCut — исследование](longcut-research.md) — AI-инструмент для видеомонтажа
