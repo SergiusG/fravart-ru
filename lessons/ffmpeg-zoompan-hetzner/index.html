@@ -10,9 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://fravart.ru/days/2026-07-11-shkola-moskva-start/">
+        <link rel="canonical" href="https://fravart.ru/lessons/ffmpeg-zoompan-hetzner/">
       
       
+        <link rel="prev" href="../../lessons-learned/">
+      
+      
+        <link rel="next" href="../../days/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Школа (Москва): старт работ над спецификацией - fravart.ru — Личный архив</title>
+        <title>Уроки ffmpeg - fravart.ru — Личный архив</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#ffmpeg-zoompan-hetzner-4-core" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Школа (Москва): старт работ над спецификацией
+              Уроки ffmpeg
             
           </span>
         </div>
@@ -248,9 +252,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../../lessons/ffmpeg-zoompan-hetzner/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -269,7 +275,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../../days/" class="md-tabs__link">
         
   
   
@@ -816,10 +822,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../lessons/ffmpeg-zoompan-hetzner/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Уроки ffmpeg
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -835,6 +868,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проблема (повторилась дважды)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Корневые причины
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Решения (от субагентов)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Решения (от субагентов)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Использовать GPU кодек
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-d-zoompan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Изменить d= в zoompan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Предрендер на меньшем разрешении
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Рекомендация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Команда-победитель (на будущее)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что делать с текущими 4-5 рендерами
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -846,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../days/" class="md-nav__link">
         
   
   
@@ -920,10 +1078,104 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проблема (повторилась дважды)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Решения
+        Корневые причины
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Решения (от субагентов)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Решения (от субагентов)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Использовать GPU кодек
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-d-zoompan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Изменить d= в zoompan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Предрендер на меньшем разрешении
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Рекомендация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Команда-победитель (на будущее)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что делать с текущими 4-5 рендерами
       
     </span>
   </a>
@@ -945,58 +1197,57 @@
                 
                   
 
-  <nav class="md-tags" >
-    
-      
-      
-      
-      
-        <span class="md-tag">москва</span>
-      
-    
-      
-      
-      
-      
-        <span class="md-tag">старт</span>
-      
-    
-      
-      
-      
-      
-        <span class="md-tag">школа</span>
-      
-    
-      
-      
-      
-      
-        <span class="md-tag">электромонтаж</span>
-      
-    
-  </nav>
+
+
+<h1 id="ffmpeg-zoompan-hetzner-4-core">Урок: ffmpeg zoompan на Hetzner 4-core<a class="headerlink" href="#ffmpeg-zoompan-hetzner-4-core" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Проблема (повторилась дважды)<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><code>zoompan=z='...':d=1:s=1920x1080:fps=24</code> на 4864×3328 PNG-картинке с <code>scale=2112:1188:flags=lanczos</code> + Ken Burns на 1800 сек (30 мин):
+- 1 процесс: ~1.3 fps realtime, ETA <strong>~9 часов</strong>
+- 4 параллельных процесса на 4 ядрах: каждый ~0.07-0.11x realtime, ETA <strong>6+ часов</strong>
+- 4 готовых 30-мин ролика ещё НЕ завершились после 1.5 часа — 78% CPU каждый</p>
+<h2 id="_2">Корневые причины<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li><code>zoompan=d=1</code> — самый медленный режим (на каждом кадре новая трансформация)</li>
+<li>Lanczos-скейл 5K→1080p на CPU дорогой</li>
+<li>4 параллельных CPU-bound ffmpeg конкурируют за 4 ядра</li>
+</ol>
+<h2 id="_3">Решения (от субагентов)<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="a-gpu">A. Использовать GPU кодек<a class="headerlink" href="#a-gpu" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>-c:v<span class="w"> </span>h264_vaapi<span class="w"> </span>-rc_mode<span class="w"> </span><span class="m">4</span><span class="w"> </span>-qp<span class="w"> </span><span class="m">23</span>
+</code></pre></div>
+Ускорение: 10-30×. У Hetzner есть <code>/dev/dri/renderD128</code> (Intel iGPU).</p>
+<h3 id="b-d-zoompan">B. Изменить <code>d=</code> в zoompan<a class="headerlink" href="#b-d-zoompan" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">zoompan</span><span class="o">=</span><span class="nv">z</span><span class="o">=</span><span class="s1">&#39;min(zoom+0.000045,1.13)&#39;</span>:d<span class="o">=</span><span class="m">125</span>:s<span class="o">=</span>1920x1080:fps<span class="o">=</span><span class="m">24</span>
+</code></pre></div>
+Ускорение: <strong>125×</strong> (с <code>d=1</code> на <code>d=125</code>). Финиш за ~3 мин вместо 6 часов.</p>
+<h3 id="c">C. Предрендер на меньшем разрешении<a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>scale=960:540:flags=lanczos + zoompan → потом scale=1920:1080:flags=lanczos
+</code></pre></div>
+Ускорение: 5-8×.</p>
+<h2 id="_4">Рекомендация<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>Для длинных ambient-роликов на Hetzner CPU:</strong>
+- Использовать <code>d=125</code> или больше (или d=N где N=2×FPS)
+- Или GPU кодек <code>h264_vaapi</code>
+- <strong>Не запускать &gt;1 параллельного рендера</strong> на 4 ядрах
+- Или заложить в бюджет: 30-мин ролик = <strong>6+ часов</strong> wall clock</p>
+<h2 id="-">Команда-победитель (на будущее)<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ffmpeg<span class="w"> </span>-y<span class="w"> </span>-loop<span class="w"> </span><span class="m">1</span><span class="w"> </span>-i<span class="w"> </span>input.png<span class="w"> </span>-stream_loop<span class="w"> </span>-1<span class="w"> </span>-i<span class="w"> </span>audio.mp3<span class="w"> </span>-t<span class="w"> </span><span class="m">1800</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>-filter_complex<span class="w"> </span><span class="s2">&quot;[0:v]scale=2112:1188:flags=lanczos,zoompan=z=&#39;min(zoom+0.000045,1.13)&#39;:d=125:s=1920x1080:fps=24[v]&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>-map<span class="w"> </span><span class="s2">&quot;[v]&quot;</span><span class="w"> </span>-map<span class="w"> </span><span class="s2">&quot;1:a&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>-c:v<span class="w"> </span>h264_vaapi<span class="w"> </span>-qp<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>-c:a<span class="w"> </span>aac<span class="w"> </span>-b:a<span class="w"> </span>128k<span class="w"> </span>-ar<span class="w"> </span><span class="m">44100</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span>-movflags<span class="w"> </span>+faststart<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span>output.mp4
+</code></pre></div>
+<h2 id="4-5">Что делать с текущими 4-5 рендерами<a class="headerlink" href="#4-5" title="Permanent link">&para;</a></h2>
+<p>Они работают, ETA 1-3 часа. Если доделаются — хорошо. Если нет — убить и переделать с <code>d=125</code>.</p>
+<p>Записал: 2026-07-25 / handoff context</p>
 
 
 
-<h1 id="_1">Что делали<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>Начали работу над объектом «Школа №548 «Царицыно» в Москве (Елецкая, 31 к.2).</p>
-<p>Получили от заказчика спецификации в формате <code>.doc</code> (3 файла: ВРУ + начало + окончание).</p>
-<h2 id="_2">Решения<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Заказчик: Автономная некоммерческая организация «Развитие городских технологий»</li>
-<li>Источник данных для КП — файлы <code>.doc</code> от заказчика (первоначально)</li>
-<li>Цель — построить коммерческое предложение на электромонтажные работы</li>
-</ul>
 
 
 
-
-
-
-
-  
-  
 
 
 
