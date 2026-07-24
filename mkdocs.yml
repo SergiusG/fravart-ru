@@ -62,5 +62,9 @@ nav:
       - Почему ты стареешь: topics/pochemu-ty-stareesh.md
       - ЭОМ-спецификации: topics/eom-specs.md
       - Hermes — конфиг: topics/hermes-config.md
+      - Buried Blueprints: topics/buried-blueprints.md
+      - Misty Horizons — Ambient: topics/misty-horizons.md
+      - AI-модели и сервисы: topics/ai-models-experiments.md
+      - Видеопродакшн — пайплайн: topics/videobooks.md
   - Записи по дням: days.md
   - Теги: tags.md
