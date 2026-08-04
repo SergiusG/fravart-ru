@@ -6,7 +6,7 @@ Drive: https://drive.google.com/drive/folders/1hrK8D9Bkhhr2ghOzduS5Ae79XmNlh89K
 
 ## Очередь YouTube Shorts
 - [x] 01-Caesar — caesar_FINAL.mp4 (опубликован 03.08.2026, https://youtube.com/shorts/qsH93jt1y0E)
-- [ ] 02-Tesla-vs-Newton — tesla_newton_FINAL.mp4
+- [x] 02-Tesla-vs-Newton — tesla_newton_FINAL.mp4 (опубликован 04.08.2026)
 - [ ] 03-Gandhi — gandhi_FINAL.mp4
 - [ ] 04-Three-Leaders — leaders_FINAL.mp4
 - [ ] 05-Eyes — eyes_FINAL.mp4
