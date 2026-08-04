@@ -175,6 +175,7 @@
 | Азиатский маркетинг | `/root/face-reading-asia-cultural-marketing-analysis.md` |
 | База книг (PDF→txt) | `/tmp/face_method/` |
 | **Скоринг-движок + PDF-отчёты + web-форма (готово 04.08)** | `/root/face_method_kb/` — см. `days/2026-08-04-topolov-psychotype-report.md` |
+| **Локализация на EN (готово 04.08): весь контент/отчёты на английском, имя Тополова убрано** | `/root/face_method_kb/` — см. `days/2026-08-04-topolov-english-localization.md` |
 
 ---
 
