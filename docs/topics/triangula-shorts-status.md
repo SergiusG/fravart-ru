@@ -15,7 +15,7 @@ Drive: https://drive.google.com/drive/folders/1hrK8D9Bkhhr2ghOzduS5Ae79XmNlh89K
 ## Очередь Instagram Reels (те же видео, тот же день что YouTube; ссылка → в bio профиля)
 Аккаунт: **triangula.app** (handle, переименован 03.08.2026, был пустой канал), название: **Triangula — Face Reading**
 - [x] 01-Caesar — caesar_FINAL.mp4 (опубликован 03.08.2026, https://www.instagram.com/reel/DblGFngMatN/)
-- [ ] 02-Tesla-vs-Newton — tesla_newton_FINAL.mp4
+- [x] 02-Tesla-vs-Newton — tesla_newton_FINAL.mp4 (опубликован 04.08.2026)
 - [ ] 03-Gandhi — gandhi_FINAL.mp4
 - [ ] 04-Three-Leaders — leaders_FINAL.mp4
 - [ ] 05-Eyes — eyes_FINAL.mp4
