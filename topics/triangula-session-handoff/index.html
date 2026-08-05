@@ -1,0 +1,1555 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Архив совместных сессий с AI-агентом">
+      
+      
+      
+        <link rel="canonical" href="https://fravart.ru/topics/triangula-session-handoff/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Triangula — session state (2026-07-29) - fravart.ru — Личный архив</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#triangula-handoff" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="fravart.ru — Личный архив" class="md-header__button md-logo" aria-label="fravart.ru — Личный архив" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            fravart.ru — Личный архив
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Triangula — session state (2026-07-29)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Тёмная тема"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Тёмная тема" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Светлая тема"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Светлая тема" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projects/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Темы
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../lessons/ffmpeg-zoompan-hetzner/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Уроки ffmpeg
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../days/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Записи по дням
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tags.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Теги
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="fravart.ru — Личный архив" class="md-nav__button md-logo" aria-label="fravart.ru — Личный архив" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    fravart.ru — Личный архив
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Темы
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Темы
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Темы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shkola-moskva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Школа (Москва)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gran-pri-auppt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Гран-При АУППТ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bioelectricity-levin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bioelectricity / Levin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pochemu-ty-stareesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Почему ты стареешь
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eom-specs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ЭОМ-спецификации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hermes-config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hermes — конфиг
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buried-blueprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buried Blueprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misty-horizons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misty Horizons — Ambient
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misty-horizons-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misty Horizons — стратегия роста
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-models-experiments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-модели и сервисы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../videobooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Видеопродакшн — пайплайн
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lessons-learned/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Уроки (Lessons)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lessons/ffmpeg-zoompan-hetzner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Уроки ffmpeg
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../days/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Записи по дням
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теги
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что работает в проде (✅ проверено)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Что работает в проде (✅ проверено)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Архитектура
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Стек
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub репо (приватный)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Файлы и документы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Файлы и документы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubcomsergiusgtriangula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        В репо (github.com/SergiusG/triangula)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        На сервере
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-drive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        На Google Drive
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#face-apijs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Архитектура детекции (face-api.js)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Архитектура детекции (face-api.js)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#worker-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worker endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        История решений (для контекста)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="История решений (для контекста)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26 июля — старт
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27 июля — деплой v1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-v020-v030" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28 июля — v0.2.0 → v0.3.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что НЕ сделано / открытые вопросы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Что НЕ сделано / открытые вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Блокирующее
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 Важное
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟢 Потом
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что делать в новой сессии
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Что делать в новой сессии">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#go-to-stripe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Если Сергей говорит "go to Stripe"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go-to-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Если Сергей говорит "go to LLM"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go-to-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Если Сергей говорит "go to feedback"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Связанные документы
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">deepseek</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">session-handoff</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">status</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">triangula</span>
+      
+    
+  </nav>
+
+
+
+<h1 id="triangula-handoff">Triangula — состояние проекта (handoff для следующей сессии)<a class="headerlink" href="#triangula-handoff" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Это handoff-документ. Сергей сказал "?" (видимо сессия разрослась и Hermes начал "тупить"). Сергей перезапустит сессию. Этот документ + memory дадут новой сессии полный контекст.</p>
+</blockquote>
+<hr />
+<h2 id="_1">Что работает в проде (✅ проверено)<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><strong>Live:</strong> https://triangula.app (CF Zone <code>38e06bdaec702e8035942026d8a462b3</code>)</p>
+<h3 id="_2">Архитектура<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><strong>Один Cloudflare Worker</strong> <code>/opt/triangula-api/</code> раздаёт <strong>всё</strong>:
+- Статика (HTML/CSS/JS) через Workers Static Assets
+- API (<code>/api/health</code>, <code>/api/archetypes</code>, <code>/api/reading</code>)
+- face-api.js + модели через <code>/fapi/</code> путь</p>
+<p>CF token: <code>cfut_NuIDu...</code> (нужны 4 права: Pages:Edit, Workers Scripts:Edit, Workers Routes:Edit, DNS:Edit).</p>
+<h3 id="_3">Стек<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>CV</strong>: face-api.js в браузере (TensorFlow.js WebGL backend, не WASM)</li>
+<li><strong>Bundle</strong>: 1.6 MB inline base64 (face-api.js 664KB + tinyFaceDetector 190KB + faceLandmark68 357KB)</li>
+<li><strong>Scoring</strong>: cosine similarity в 3D A/B/C пространстве + 16 правил из rules.json</li>
+<li><strong>Worker cold start</strong>: &lt; 1 сек (в отличие от MediaPipe 8.5 MB который был 30-60 сек)</li>
+</ul>
+<h3 id="github">GitHub репо (приватный)<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
+<p><code>github.com/SergiusG/triangula</code></p>
+<p><strong>CI/CD:</strong> <code>.github/workflows/deploy.yml</code> — auto-deploy на push в main</p>
+<p><strong>Secrets (SENEGA1/2/3):</strong>
+- SENEGA1 = <code>CLOUDFLARE_API_TOKEN</code> (53 chars, начинается с <code>cfut_NuIDu7P</code>)
+- SENEGA2 = <code>CLOUDFLARE_ACCOUNT_ID</code> (<code>ab7b2c8bdab9cd9f9e0cd6235dfe0659</code>, 32 chars)
+- SENEGA3 = <code>CLOUDFLARE_ZONE_ID</code> (<code>38e06bdaec702e8035942026d8a462b3</code>, 32 chars)</p>
+<p><strong>GH PAT</strong>: <code>[redacted]</code> в <code>~/.config/gh/hosts.yml</code> (scopes: repo, workflow, ...)</p>
+<hr />
+<h2 id="_4">Файлы и документы<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="githubcomsergiusgtriangula">В репо (github.com/SergiusG/triangula)<a class="headerlink" href="#githubcomsergiusgtriangula" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>.github/workflows/deploy.yml  # CI/CD
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>.gitignore                     # исключает src/faceapi-inline.js
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>README.md                      # инструкция deploy
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>docs/TECHNOLOGY.md             # tech report (12KB)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>rules.json                     # 16 архетипов + компас-правила (English)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>scripts/fetch-faceapi.sh      # regenerates src/faceapi-inline.js (будет переименовано)
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>src/
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── worker.js                 # routing + scoring engine
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>└── faceapi-inline.js         # 1.6 MB base64, регенерируется скриптом
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>public/
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>├── index.html                # 3 шага: upload → survey → result
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>├── script.js                 # face-api.js + 12 questions + API call
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>└── styles.css                # Editorial Depth style (Cormorant + Inter)
+</code></pre></div>
+<h3 id="_5">На сервере<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>/opt/triangula-api/</code> — сам Worker</li>
+<li><code>/root/triangula-tech-report.md</code> (12KB) — полный tech report</li>
+<li><code>/root/fravart-ru/docs/topics/triangula.md</code> — архитектура wiki</li>
+<li><code>/root/fravart-ru/docs/topics/triangula-tech.md</code> — технология/монетизация wiki</li>
+</ul>
+<h3 id="google-drive">На Google Drive<a class="headerlink" href="#google-drive" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Folder Triangula</strong>: <code>1yjVP9fhcFylocBPB2ZnlD34ZgQqtY-h9</code></li>
+<li><strong>Folder Documents</strong>: <code>1Sw_NGZdq5HgkPyHSoUBDDWWyFyrAVXq5</code></li>
+<li><strong>triangula-tech-report.md</strong>: <code>1O4Y9LtghtiDKhC7aqj4IcD-gDsqhkQ1I</code></li>
+<li>Drive token валиден после re-auth 2026-07-28 (gmail, drive, contacts, sheets, docs, calendar, youtube)</li>
+</ul>
+<hr />
+<h2 id="face-apijs">Архитектура детекции (face-api.js)<a class="headerlink" href="#face-apijs" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Browser
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  ↓ upload photo
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>script.js: loadFaceApi() → /fapi/face-api.min.js (664KB)
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  ↓ load models
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>faceapi.nets.tinyFaceDetector + faceLandmark68 → /fapi/*.bin
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  ↓ detect
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>faceapi.detectSingleFace() → 68 landmarks
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  ↓
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>computeMetrics() → 5 face metrics (face_shape, nose_shape, mouth_width, duchen_smile, asymmetry)
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  ↓
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>POST /api/reading → Worker
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  ↓
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>scoreArchetype() → cosine similarity в 3D A/B/C
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  ↓
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>{ archetype, scores: {A,B,C}, confidence, narrative }
+</code></pre></div>
+<h3 id="worker-endpoints">Worker endpoints<a class="headerlink" href="#worker-endpoints" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td><code>/</code></td>
+<td>HTML landing</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/styles.css</code>, <code>/script.js</code></td>
+<td>Static assets</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/fapi/face-api.min.js</code></td>
+<td>JS library</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/fapi/*-weights_manifest.json</code></td>
+<td>Model manifests (JSON)</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/fapi/*.bin</code></td>
+<td>Model weights</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/api/health</code></td>
+<td><code>{ok, service, version, archetypes_loaded, assets}</code></td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/api/archetypes</code></td>
+<td>16 archetypes</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/api/reading</code></td>
+<td><code>{archetype, scores, confidence, narrative}</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_6">История решений (для контекста)<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="26">26 июля — старт<a class="headerlink" href="#26" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Бренд <strong>Triangula</strong> (геометрия лица = треугольники)</li>
+<li>Домен <code>triangula.app</code> через Cloudflare Registrar</li>
+<li>Лендинг <code>/root/triangula-landing/</code></li>
+<li>Playbook: <code>/root/fravart-ru/docs/topics/face-method-startup-playbook.md</code></li>
+</ul>
+<h3 id="27-v1">27 июля — деплой v1<a class="headerlink" href="#27-v1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Лендинг через Wrangler Pages (production <code>fe332fb3</code>)</li>
+<li>Трек 2 (Aftershock validation) — заблокирован DDoS-Guard, 26 пар реально распарсены в <code>/tmp/triangula-validation/scripts/extract_pairs.py</code></li>
+</ul>
+<h3 id="28-v020-v030">28 июля — v0.2.0 → v0.3.0<a class="headerlink" href="#28-v020-v030" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Worker создан, 3 эндпоинта + scoring engine</li>
+<li><strong>Сначала Pages + Worker</strong> (конфликт с routing)</li>
+<li><strong>Перешли на 1 Worker</strong> (статика + API + assets)</li>
+<li><strong>MediaPipe FaceMesh</strong> 8.5 MB — таймаутил 60 сек на Samsung S24+</li>
+<li><strong>Заменили на face-api.js</strong> 1.6 MB — работает за 5-10 сек</li>
+<li><strong>Перевели rules.json на English</strong> (был на русском из KB Тополова)</li>
+<li><strong>GitHub</strong> репо создан + CI/CD настроен</li>
+<li><strong>Google Drive</strong> auth + tech report залит</li>
+</ul>
+<hr />
+<h2 id="_7">Что НЕ сделано / открытые вопросы<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">🔴 Блокирующее<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Stripe не подключен</strong> — нужны ключи (publishable + secret). Без этого нет монетизации ($14.99).</li>
+<li><strong>Email</strong> — Сергей задал вопрос "?" перед перезапуском. Возможно он имеет в виду:</li>
+<li><strong>Email юзеров</strong> для отправки PDF-отчёта после оплаты (Resend / Cloudflare Email Workers)</li>
+<li><strong>Email уведомлений</strong> ему о новых пользователях (webhook)</li>
+<li><strong>hello@triangula.app</strong> на лендинге (CF Email Routing — должен работать автоматически)</li>
+<li><strong>Stripe receipts</strong> (автоматические)</li>
+</ol>
+<h3 id="_9">🟡 Важное<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>LLM-нарратив</strong> — пока шаблонный (English). Подключить когда обсудим Anthropic/OpenRouter/локальный.</li>
+<li><strong>Implicit feedback кнопки</strong> в result-card — «Это про меня» / «Не про меня» → логирование в KV → пересчёт весов правил.</li>
+<li><strong>Трек 2 validation Aftershock</strong> — отложен, DDoS-Guard блокирует скачивание фото.</li>
+</ol>
+<h3 id="_10">🟢 Потом<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Email-доставка PDF отчёта через R2</li>
+<li>Подписка $9.99/мес (v2.0)</li>
+<li>SEO-лендинги под "face archetype test", "personality by face"</li>
+</ol>
+<hr />
+<h2 id="_11">Что делать в новой сессии<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Прочитать <code>/root/fravart-ru/docs/topics/triangula.md</code> и <code>triangula-tech.md</code></li>
+<li>Прочитать этот handoff-документ</li>
+<li>Проверить <code>curl https://triangula.app/api/health</code> (должен 200)</li>
+<li>Спросить у Сергея: "Продолжаем с email — что именно? User reports / notifications / contact?"</li>
+</ol>
+<h3 id="go-to-stripe">Если Сергей говорит "go to Stripe"<a class="headerlink" href="#go-to-stripe" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>/opt/triangula-api
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># Получить ключи из Dashboard:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># https://dashboard.stripe.com/apikeys</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># publishable_key (pk_live_...) — фронт</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># secret_key (sk_live_...) — НИКОГДА не в коде, через env</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Тестовые ключи для разработки:</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># publishable: pk_test_...</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># secret: sk_test_...</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># Создать продукты в Stripe:</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># - Product: Triangula Reading</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># - Price: $14.99 one-time</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="c1"># - Получить price_id</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># Добавить в Worker:</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># 1. POST /api/checkout — создаёт Stripe Session</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="c1"># 2. POST /api/webhook — обрабатывает успешную оплату</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="c1"># 3. Вернуть полный отчёт только после верификации webhook</span>
+</code></pre></div>
+<h3 id="go-to-llm">Если Сергей говорит "go to LLM"<a class="headerlink" href="#go-to-llm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Рекомендую OpenRouter (любая модель, pay-as-you-go, $0.02-0.05 за отчёт)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># Или Anthropic Claude Haiku 4.5 (~$0.02/отчёт, качество)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Что нужно:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># 1. API ключ OpenRouter / Anthropic</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1"># 2. Заменить buildNarrative() в src/worker.js на вызов LLM</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># 3. Кэшировать нарративы в KV (по archetype code, чтобы не платить за одинаковые)</span>
+</code></pre></div>
+<h3 id="go-to-feedback">Если Сергей говорит "go to feedback"<a class="headerlink" href="#go-to-feedback" title="Permanent link">&para;</a></h3>
+<p>Добавить кнопки «Это про меня» / «Не про меня» в result-card → POST /api/feedback → запись в CF Analytics Engine. Когда накопится 50+ фидбеков — пересчёт весов в rules.json.</p>
+<hr />
+<h2 id="_12">Связанные документы<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>/root/fravart-ru/docs/topics/triangula.md</code> — архитектура</li>
+<li><code>/root/fravart-ru/docs/topics/triangula-tech.md</code> — технология/монетизация</li>
+<li><code>/root/fravart-ru/docs/topics/face-method-startup-playbook.md</code> — стратегия запуска (исходный playbook)</li>
+<li><code>/tmp/triangula-validation/scripts/extract_pairs.py</code> — парсер 26 пар Aftershock</li>
+<li><code>/root/face_method_kb/face_visual_rules.json</code> — исходная KB Тополова (RU)</li>
+<li>github.com/SergiusG/triangula — исходный код + docs/TECHNOLOGY.md</li>
+<li>Google Drive: Triangula/Documents/triangula-tech-report.md</li>
+</ul>
+<hr />
+<p><em>Документ создан 2026-07-28 перед handoff в новую сессию.</em></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
