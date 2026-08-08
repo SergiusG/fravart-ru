@@ -36,6 +36,9 @@ tags: [triangula, marketing, growth, launch]
   - Категория: AI / Personality / Entertainment
   - Первый комментарий: от первого лица, про историю проекта
 - [ ] **Reddit**: r/faceanalysis, r/mbti, r/personality, r/SideProject
+  - Аккаунт: возраст ~2 мес (на 07.08.2026), карма 1 — голый, ссылки сразу НЕ давать
+  - План: неделя 1 — прогрев (полезные ответы без ссылок, цель 15-30 кармы), неделя 2 — мягкий вход со ссылками по запросу, неделя 3 — Product Hunt + Pinterest
+  - Черновики ответов готовит Hermes, публикует Сергей вручную
   - Пост: "I built an AI that reads 16 archetypes from your face — try it free"
   - Без ссылки в посте, в комментариях
 - [ ] **Hacker News** — Show HN
