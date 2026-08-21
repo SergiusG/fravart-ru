@@ -1,0 +1,1647 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Архив совместных сессий с AI-агентом">
+      
+      
+      
+        <link rel="canonical" href="https://fravart.ru/topics/agentbox/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>AgentBox — проект - fravart.ru — Личный архив</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#agentbox" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="fravart.ru — Личный архив" class="md-header__button md-logo" aria-label="fravart.ru — Личный архив" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            fravart.ru — Личный архив
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AgentBox — проект
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Тёмная тема"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Тёмная тема" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Светлая тема"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Светлая тема" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projects/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Темы
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../lessons/ffmpeg-zoompan-hetzner/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Уроки ffmpeg
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../days/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Записи по дням
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tags.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Теги
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="fravart.ru — Личный архив" class="md-nav__button md-logo" aria-label="fravart.ru — Личный архив" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    fravart.ru — Личный архив
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Темы
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Темы
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Темы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shkola-moskva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Школа (Москва)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gran-pri-auppt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Гран-При АУППТ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bioelectricity-levin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bioelectricity / Levin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pochemu-ty-stareesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Почему ты стареешь
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eom-specs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ЭОМ-спецификации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hermes-config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hermes — конфиг
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buried-blueprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buried Blueprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misty-horizons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misty Horizons — Ambient
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misty-horizons-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misty Horizons — стратегия роста
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-models-experiments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-модели и сервисы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../videobooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Видеопродакшн — пайплайн
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lessons-learned/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Уроки (Lessons)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lessons/ffmpeg-zoompan-hetzner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Уроки ffmpeg
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../days/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Записи по дням
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теги
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Дизайн-система
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что это
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ключевые ссылки
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Репозиторий проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Архитектура
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Архитектура">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-cloudflare-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend (Cloudflare Pages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-cloudflare-worker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend (Cloudflare Worker)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-worker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI-роутер (в Worker)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telegram-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Telegram-бот
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 шаблонов MVP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цены для пользователей
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ключевые решения (что делали и почему)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ключевые решения (что делали и почему)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cloudflare-workers-python-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Cloudflare Workers вместо Python backend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-alibaba-token-plan-ai-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Alibaba Token Plan как AI-провайдер
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fsm-in-memory-map-d1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. FSM в in-memory Map (не D1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-vanilla-js-frontend-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Vanilla JS frontend без React
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-telegram-polling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Telegram polling как страховка
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Бэклог (по приоритету)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Бэклог (по приоритету)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Срочно (блокирует продакшен)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Важно (когда появятся пользователи)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Потом (после валидации)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Парковка
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Парковка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#15082026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Женская ниша (отклонено 15.08.2026)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Использованные ресурсы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сессии
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Связанные скиллы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Контакты для пользователей
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-08-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Прогресс 2026-08-16
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Бюджет
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Главное
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="agentbox">AgentBox — проект<a class="headerlink" href="#agentbox" title="Permanent link">&para;</a></h1>
+<p><strong>Статус:</strong> MVP запущен 2026-08-15, бот работает в Telegram, web-лендинг живой.</p>
+<h2 id="-">Дизайн-система<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+<p><strong>Палитра (финальная, 16.08.2026):</strong> Telegram-стиль — узнаваемый, ассоциируется с ботом @zdes_agentbox_bot.
+- <code>--bg: #0a1628</code> (глубокий navy)
+- <code>--bg-alt: #17212b</code> (стандартный telegram-bg)
+- <code>--bg-card: #17212b</code>
+- <code>--text: #e8eef5</code> (paper)
+- <code>--primary: #1f88c5</code> (telegram-blue) — главный акцент
+- <code>--primary-light: #2eaadc</code> (light blue)
+- <code>--accent: #ff8c42</code> (telegram-orange) — бейджи/«В разработке»</p>
+<p><strong>Идея:</strong> «это вон тот бот в Телеграме». Пользователь видит лендинг и сразу узнаёт продукт. Сильная ассоциация.</p>
+<p><strong>Итерации, которые не зашли</strong> (для истории):
+1. Indigo + amber (стандартный SaaS)
+2. Тёплая природная (мята/кремовый/персик)
+3. Gorgonzola Blue + Autumn Glory
+4. Teal фон + Deep Azure текст (плашки сливались)
+5. Монохром + бирюзовый (<code>#00d4aa</code>) — красиво, но не узнаваемо
+6. Терракота + графит — слишком ремесленно для D2C</p>
+<h2 id="_1">Что это<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Коробочный ИИ-помощник для российского пользователя. D2C. Telegram + web + Mini App. Покупаешь подписку → выбираешь шаблон → за 30-60 сек получаешь готовый результат. Без VPN, без промпт-инжиниринга.</p>
+<h2 id="_2">Ключевые ссылки<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Telegram-бот:</strong> @zdes_agentbox_bot</li>
+<li><strong>Токен:</strong> <code>8891149694:AAEl5EjQFkl3q_Ys5LmQSRP3kCUrCWsRwJg</code></li>
+<li><strong>Лендинг:</strong> https://80b11a58.agentbox-app-1xb.pages.dev</li>
+<li><strong>API Worker:</strong> https://agentbox-api.senega.workers.dev</li>
+<li><strong>Pages-проект:</strong> agentbox-app</li>
+<li><strong>Worker-проект:</strong> agentbox-api</li>
+</ul>
+<h2 id="_3">Репозиторий проекта<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><code>/root/projects/agentbox/</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>agentbox/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── CONCEPT.md            # концепт + бэклог + риски
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── README.md             # краткое описание
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── docs/
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── SETUP.md          # как развернуть
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   ├── landing-live.png  # скриншот живого лендинга
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   ├── landing-preview.png
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│   └── result-demo.png   # скриншот результата AI
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── frontend/public/      # лендинг (HTML + CSS + JS, без билда)
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   ├── index.html
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   ├── styles.css
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│   ├── app.js
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│   └── robots.txt
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>├── backend/              # Python/FastAPI прототип (не задеплоен)
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>└── workers/agentbox-api/ # основной backend — Cloudflare Worker
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    ├── src/index.ts      # Telegram FSM + AI router + 7 шаблонов
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    ├── wrangler.toml
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    ├── package.json
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    └── tsconfig.json
+</code></pre></div>
+<h2 id="_4">Архитектура<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="frontend-cloudflare-pages">Frontend (Cloudflare Pages)<a class="headerlink" href="#frontend-cloudflare-pages" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Vanilla JS, без билда — работает без npm install</li>
+<li>7 шаблонов-карточек → модалка-форма → результат</li>
+<li>API URL хардкод: <code>https://agentbox-api.senega.workers.dev</code></li>
+</ul>
+<h3 id="backend-cloudflare-worker">Backend (Cloudflare Worker)<a class="headerlink" href="#backend-cloudflare-worker" title="Permanent link">&para;</a></h3>
+<ul>
+<li>TypeScript → esbuild через wrangler</li>
+<li>Endpoints:</li>
+<li><code>GET /health</code> — health check</li>
+<li><code>GET /templates/</code> — список шаблонов</li>
+<li><code>GET /templates/{id}</code> — детали с полями</li>
+<li><code>POST /templates/{id}/run</code> — AI-генерация</li>
+<li><code>POST /tg/webhook</code> — Telegram updates</li>
+<li><code>GET /tg/set_webhook</code> — одноразовая установка webhook</li>
+<li>Секреты через <code>wrangler secret put</code>:</li>
+<li><code>ALIBABA_API_KEY</code> — Alibaba Token Plan</li>
+<li><code>TELEGRAM_BOT_TOKEN</code> — @zdes_agentbox_bot</li>
+<li>Env vars в wrangler.toml:</li>
+<li><code>ALIBABASE_URL</code> — <code>https://token-plan.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1</code></li>
+</ul>
+<h3 id="ai-worker">AI-роутер (в Worker)<a class="headerlink" href="#ai-worker" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Семантический выбор модели по типу задачи (<code>text_simple</code>, <code>text_complex</code>, <code>text_ru</code>)</li>
+<li>Цепочка фолбэка: <code>qwen3.7-plus → glm-5.2 → qwen3.6-flash → deepseek-v4-flash</code></li>
+<li>Подсчёт стоимости в USD по token'ам</li>
+</ul>
+<h3 id="telegram-">Telegram-бот<a class="headerlink" href="#telegram-" title="Permanent link">&para;</a></h3>
+<ul>
+<li>FSM через in-memory Map (теряется при редеплое, для прода → D1)</li>
+<li>Команды: <code>/start</code>, <code>/help</code>, <code>/cancel</code>, <code>/&lt;template_id&gt;</code></li>
+<li>7 шаблонов с conversation flow (пошаговый ввод полей)</li>
+<li>Inline-кнопка «🚀 Открыть приложение» → Mini App → web-лендинг</li>
+</ul>
+<h2 id="7-mvp">7 шаблонов MVP<a class="headerlink" href="#7-mvp" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Название</th>
+<th>Модель</th>
+<th>Цена (₽)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vk_post</code></td>
+<td>Пост для ВКонтакте</td>
+<td>qwen3.7-plus</td>
+<td>30</td>
+</tr>
+<tr>
+<td><code>inn_check</code></td>
+<td>Анализ контрагента по ИНН</td>
+<td>qwen3.8-max</td>
+<td>50</td>
+</tr>
+<tr>
+<td><code>resume_for_vacancy</code></td>
+<td>Резюме под вакансию</td>
+<td>qwen3.8-max</td>
+<td>80</td>
+</tr>
+<tr>
+<td><code>commercial_proposal</code></td>
+<td>Коммерческое предложение</td>
+<td>qwen3.7-plus</td>
+<td>70</td>
+</tr>
+<tr>
+<td><code>image_for_post</code></td>
+<td>Картинка для поста</td>
+<td>qwen3.6-flash (cheap)</td>
+<td>50</td>
+</tr>
+<tr>
+<td><code>text_summary</code></td>
+<td>Конспект длинного текста</td>
+<td>qwen3.8-max</td>
+<td>50</td>
+</tr>
+<tr>
+<td><code>review_reply</code></td>
+<td>Ответ на отзыв</td>
+<td>qwen3.6-flash (cheap)</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">Цены для пользователей<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>План</th>
+<th>Цена</th>
+<th>Что входит</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free</td>
+<td>0₽</td>
+<td>10 запусков/день, водяной знак</td>
+</tr>
+<tr>
+<td>Lite</td>
+<td>990₽/мес</td>
+<td>200 запусков/мес, без знака</td>
+</tr>
+<tr>
+<td>Pro</td>
+<td>2990₽/мес</td>
+<td>Безлимит, расписания</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">Ключевые решения (что делали и почему)<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="1-cloudflare-workers-python-backend">1. Cloudflare Workers вместо Python backend<a class="headerlink" href="#1-cloudflare-workers-python-backend" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Бесплатно (100k req/day)</li>
+<li>Без отдельного сервера</li>
+<li>Секреты через <code>wrangler secret</code></li>
+<li>Деплой за 5 сек</li>
+<li>Прямая маршрутизация на наш домен</li>
+</ul>
+<h3 id="2-alibaba-token-plan-ai-">2. Alibaba Token Plan как AI-провайдер<a class="headerlink" href="#2-alibaba-token-plan-ai-" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Уже есть ключ в <code>/root/.hermes/.env</code></li>
+<li>Совместимый OpenAI API endpoint в Singapore</li>
+<li>qwen3.7-plus — основная, qwen3.8-max — для сложных задач</li>
+<li>Фолбэк-цепочка защищает от 429 quota exceeded</li>
+</ul>
+<h3 id="3-fsm-in-memory-map-d1">3. FSM в in-memory Map (не D1)<a class="headerlink" href="#3-fsm-in-memory-map-d1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Для MVP прототипа достаточно</li>
+<li>На прода нужен D1/KV, иначе сессии теряются при редеплое</li>
+</ul>
+<h3 id="4-vanilla-js-frontend-react">4. Vanilla JS frontend без React<a class="headerlink" href="#4-vanilla-js-frontend-react" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Деплой одной командой <code>wrangler pages deploy</code></li>
+<li>Без билда, без зависимостей</li>
+<li>200 строк JS достаточно для D2C UI</li>
+</ul>
+<h3 id="5-telegram-polling">5. Telegram polling как страховка<a class="headerlink" href="#5-telegram-polling" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Webhook возвращал 200, но юзер не получал ответ</li>
+<li>Временный polling через <code>/tmp/agentbox_poll.py</code> забрал update'ы</li>
+<li>После отладки вернули webhook (экономит квоту Worker'а)</li>
+<li><strong>Урок:</strong> для отладки Worker'а лучше polling + log scraping</li>
+</ul>
+<h2 id="_7">Бэклог (по приоритету)<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">Срочно (блокирует продакшен)<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] ЮKassa + 54-ФЗ — без этого нет монетизации</li>
+<li>[ ] Free-лимит 10/день — без этого сожжём Alibaba квоту</li>
+<li>[ ] D1 для истории — без этого юзеры не видят прошлые результаты</li>
+</ul>
+<h3 id="_9">Важно (когда появятся пользователи)<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Поддомен <code>agent.triangula.app</code> — нужен CF API token с DNS scope</li>
+<li>[ ] Аналитика использования (сколько юзеров, какие шаблоны, churn)</li>
+<li>[ ] Schedules (cron-шаблоны) — отложено на mobile-фазу</li>
+<li>[ ] Кнопка «Поделиться результатом» в Telegram</li>
+</ul>
+<h3 id="_10">Потом (после валидации)<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Mobile PWA / React Native</li>
+<li>[ ] MAX-бот (когда проект уйдёт на рос. железо)</li>
+<li>[ ] Self-host вариант (escape hatch для корпораций)</li>
+<li>[ ] Маркет агентов (Discovery / fork, как у Eggent)</li>
+</ul>
+<h2 id="_11">Парковка<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h3 id="15082026">Женская ниша (отклонено 15.08.2026)<a class="headerlink" href="#15082026" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Идея «ИИ-агент для девочек» — не сегмент, а демография</li>
+<li>Триггер вернуться: после 500+ юзеров в AgentBox посмотреть пол/возраст, если &gt;40% женщины 25-45 — выделить отдельный каталог шаблонов, не отдельный продукт</li>
+</ul>
+<h2 id="_12">Использованные ресурсы<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Cloudflare Workers + Pages (free tier)</li>
+<li>Alibaba Token Plan (через <code>ALIBABA_API_KEY</code> в <code>/root/.hermes/.env</code>)</li>
+<li>Telegram Bot API (через токен @zdes_agentbox_bot)</li>
+</ul>
+<h2 id="_13">Сессии<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<ul>
+<li>2026-08-15 — запуск MVP, концепт, бэклог</li>
+<li>(будущие) — следующие шаги по бэклогу</li>
+</ul>
+<h2 id="_14">Связанные скиллы<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>cloudflare-workers-deploy</code> — деплой</li>
+<li><code>telegram-bot-development</code> — паттерны бота</li>
+<li><code>alibaba-cloud-token-plan</code> — управление ключом</li>
+<li><code>hermes-agent</code> — сам Hermes</li>
+</ul>
+<h2 id="_15">Контакты для пользователей<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Telegram: @zdes_agentbox_bot</li>
+<li>Web: https://box.triangula.app (кастомный домен, primary)</li>
+<li>Pages-проект: agentbox-app (preview URL: <code>https://&lt;id&gt;.agentbox-app-1xb.pages.dev</code>)</li>
+<li>Email: hi@triangula.app (временный)</li>
+</ul>
+<h2 id="2026-08-16">Прогресс 2026-08-16<a class="headerlink" href="#2026-08-16" title="Permanent link">&para;</a></h2>
+<p><strong>UI/UX (фаза 1 — итерации цвета):</strong>
+- Indigo+amber → тёплая природная → Gorgonzola/Autumn → teal+azure → монохром+бирюзовый → терракота → <strong>Telegram-стиль (финальный, см. начало файла)</strong></p>
+<p><strong>UI/UX (фаза 2 — репозиционирование):</strong>
+- Главная <code>/</code>: hero «Ваш ИИ-помощник, который всегда рядом» + 4 роли (Помощник / Собеседник / Партнёр / Консультант) + блок «Как начать» + финальный CTA в Telegram. Никаких «7 шаблонов» и цен на главной.
+- <code>/templates</code> (НОВАЯ): каталог 7 шаблонов с модалкой запуска (вырезано с главной)
+- <code>/auth/start</code>, <code>/auth/callback</code>: Telegram Login через OIDC + PKCE
+- Бургер-меню на мобилке/планшете (≤900px)
+- Personas/Automations: сетка 2 колонки, боковые отступы как на 8″
+- Clean URLs: <code>/personas</code>, <code>/dialogs</code>, <code>/dialog</code>, <code>/automations</code>, <code>/templates</code></p>
+<p><strong>Инфра:</strong>
+- Code backup: <code>https://github.com/SergiusG/agentbox</code> (private, синхронизирован)
+- Worker secrets (в Cloudflare, НЕ в git):
+  - <code>TG_CLIENT_ID</code> = <code>8891149694</code> (bot_id, публичный)
+  - <code>TG_CLIENT_SECRET</code> (от @BotFather, в памяти Hermes)
+  - <code>JWT_SECRET</code> (случайный hex-32, автогенерация)
+  - <code>WEBAPP_URL</code> = <code>https://box.triangula.app</code>
+- USERS_KV namespace: <code>41815f0ee21146d3b1faac382cef39a4</code>
+- Telegram Login Widget → OIDC (старый iframe deprecated в 2026)
+- Free лимит: 10 сообщений/день в диалогах
+- Деплой: <code>cd /root/projects/agentbox/frontend &amp;&amp; rm -rf .wrangler public/.wrangler &amp;&amp; wrangler pages deploy .</code>
+- Worker: <code>cd /root/projects/agentbox/workers/agentbox-api &amp;&amp; npx wrangler deploy</code>
+- CDN-кэш Cloudflare НЕ сбрасывается моим токеном → юзер чистит кэш браузера</p>
+<h2 id="_16">Бюджет<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<ul>
+<li>0₽ — всё на free tier</li>
+<li>AI API: ~50₽/мес при 100 юзерах (qwen3.7-plus ~$0.003/запрос)</li>
+<li>Домен: 500₽/год когда купим</li>
+</ul>
+<h2 id="_17">Главное<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<p><strong>Это не «идея для обсуждения». Это реальный работающий продукт.</strong>
+- Telegram-бот отвечает на /start
+- Web-лендинг генерирует посты за 30-60 сек
+- AI-роутер с фолбэком
+- Скриншоты сохранены в <code>/root/projects/agentbox/docs/</code>
+- Код в Git: <code>/root/projects/agentbox/</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
